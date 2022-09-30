@@ -32,11 +32,11 @@ public class Basics {
      *    (Relevant reading: 1.1.2. Defining methods)
      */
     public static void main(final String[] args) {
-        String my_string = " Idol Long Oolong Vertical Europe University Toyota ";
+        /*String my_string = " Idol Long Oolong Vertical Europe University Toyota ";
         int[] table = {1, 2, 3, 4, 5, 6, 7};
         System.out.println(split(my_string));
         System.out.println(oddSum(table));
-        /* 3. In Python, we could print out code using the print() function.
+            3. In Python, we could print out code using the print() function.
          *    In Java, we do the same thing by using System.out.println();
          *    In the line below, we print the result of 7 + 5
          *
