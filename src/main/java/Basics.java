@@ -32,6 +32,10 @@ public class Basics {
      *    (Relevant reading: 1.1.2. Defining methods)
      */
     public static void main(final String[] args) {
+        String my_string = " Idol Long Oolong Vertical Europe University Toyota ";
+        int[] table = {1, 2, 3, 4, 5, 6, 7};
+        System.out.println(split(my_string));
+        System.out.println(oddSum(table));
         /* 3. In Python, we could print out code using the print() function.
          *    In Java, we do the same thing by using System.out.println();
          *    In the line below, we print the result of 7 + 5
@@ -44,7 +48,7 @@ public class Basics {
          *                Hello World!
          */
 
-
+        System.out.println("Hello World!");
 
         /* 4. In Python, we could declare variables using a simple assignment
          *    statement. For example:
@@ -63,7 +67,7 @@ public class Basics {
          *                value 100.
          */
 
-
+        int my_variable = 100;
 
         /* Do not remove the line below: if you did task 2 correctly, then
          * you should see the message "my_variable's value is 100" if you run
@@ -99,8 +103,10 @@ public class Basics {
          * Current count: 1
          * Current count: 0
          */
-
-
+        int finish = 10;
+        for(int i = 0; i <= finish; i++){
+            System.out.println("Current count: " + i);
+        }
     }
 
     /**
@@ -141,8 +147,15 @@ public class Basics {
          *                you may use them if you wish.
          */
         StringBuilder ret = new StringBuilder();
+        String org = to_split.strip();
+        ret.append(org.charAt(0));
+        for (int i = 0; i < org.length(); i++){
+            if (Character.isWhitespace(org.charAt(i))){
+                int f = i + 1;
+                ret.append(org.charAt(f));
+            }
+        }
 
-        // Fill in the rest of the body here
 
         return ret.toString();
     }
@@ -170,7 +183,11 @@ public class Basics {
          *                You can index into arrays as we do in Python
          *                (e.g. arr[i] gives you the item at index i).
          */
-
+        for (int i = 0; i < arr.length; i++){
+            if (i % 2 != 0){
+                current_sum += arr[i];
+            }
+        }
         return current_sum;
     }
 
