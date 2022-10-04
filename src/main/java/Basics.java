@@ -105,7 +105,7 @@ public class Basics {
          */
         int finish = 10;
         for(int i = 0; i <= finish; i++){
-            System.out.println("Current count: " + i);
+            System.out.println("Current count: " + (finish - i));
         }
     }
 
